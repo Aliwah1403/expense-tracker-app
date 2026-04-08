@@ -26,6 +26,18 @@ export default function App() {
       >
         Go to Sign Up
       </Link>
+
+      <View className="flex flex-row gap-2 mt-12">
+        <Link href="/subscriptions/spotify">Spotify Sub</Link>
+        <Link
+          href={{
+            pathname: "/subscriptions/[id]",
+            params: { id: "claude" },
+          }}
+        >
+          Claude Max
+        </Link>
+      </View>
     </View>
   );
 }
